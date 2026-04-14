@@ -4,7 +4,7 @@
 /** 1. Change the default font family in all browsers (opinionated). 2. Correct the line height in all browsers. 3. Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS. */
 /* Document ========================================================================== */
 html {
-  font-family: sans-serif; /* 1 */
+  font-family: 'Courier New', sans-serif; /* 1 */
   -webkit-text-size-adjust: 100%; /* 3 */ 
   -ms-text-size-adjust: 100%; /* 3 */
 }
@@ -295,7 +295,7 @@ body {
 }
 
 a {
-  color: #5755d9;
+  color: #52824d;
   outline: none;
   text-decoration: none;
 }
@@ -308,12 +308,12 @@ a:focus,
 a:hover,
 a:active,
 a.active {
-  color: #302ecd;
+  color: #52824d;
   text-decoration: underline;
 }
 
 a:visited {
-  color: #807fe2;
+  color: #536654;
 }
 
 h1,
@@ -555,9 +555,9 @@ html:lang(ko),
   -moz-appearance: none;
   appearance: none;
   background: #fff;
-  border: .05rem solid #5755d9;
+  border: .05rem solid #52824d;
   border-radius: .1rem;
-  color: #5755d9;
+  color: #52824d;
   cursor: pointer;
   display: inline-block;
   font-size: .8rem;
@@ -610,7 +610,7 @@ html:lang(ko),
 }
 
 .btn.btn-primary {
-  background: #5755d9;
+  background: #52824d;
   border-color: #4b48d6;
   color: #fff;
 }
@@ -625,7 +625,7 @@ html:lang(ko),
 .btn.btn-primary:active,
 .btn.btn-primary.active {
   background: #3a38d2;
-  border-color: #302ecd;
+  border-color: #52824d;
   color: #fff;
 }
 
@@ -695,14 +695,14 @@ html:lang(ko),
 .btn.btn-link {
   background: transparent;
   border-color: transparent;
-  color: #5755d9;
+  color: #52824d;
 }
 
 .btn.btn-link:focus,
 .btn.btn-link:hover,
 .btn.btn-link:active,
 .btn.btn-link.active {
-  color: #302ecd;
+  color: #52824d;
 }
 
 .btn.btn-sm {
@@ -857,7 +857,7 @@ legend {
 }
 
 .form-input:focus {
-  border-color: #5755d9; 
+  border-color: #52824d; 
   box-shadow: 0 0 0 .1rem rgba(87, 85, 217, .2);
 }
 
@@ -935,7 +935,7 @@ textarea.form-input.input-sm {
 }
 
 .form-select:focus {
-  border-color: #5755d9; 
+  border-color: #52824d; 
   box-shadow: 0 0 0 .1rem rgba(87, 85, 217, .2);
 }
 
@@ -1028,15 +1028,15 @@ textarea.form-input.input-sm {
 .form-checkbox input:focus + .form-icon,
 .form-radio input:focus + .form-icon,
 .form-switch input:focus + .form-icon {
-  border-color: #5755d9; 
+  border-color: #52824d; 
   box-shadow: 0 0 0 .1rem rgba(87, 85, 217, .2);
 }
 
 .form-checkbox input:checked + .form-icon,
 .form-radio input:checked + .form-icon,
 .form-switch input:checked + .form-icon {
-  background: #5755d9;
-  border-color: #5755d9;
+  background: #52824d;
+  border-color: #52824d;
 }
 
 .form-checkbox .form-icon,
@@ -1098,8 +1098,8 @@ textarea.form-input.input-sm {
 }
 
 .form-checkbox input:indeterminate + .form-icon {
-  background: #5755d9;
-  border-color: #5755d9;
+  background: #52824d;
+  border-color: #52824d;
 }
 
 .form-checkbox input:indeterminate + .form-icon::before {
@@ -1388,13 +1388,13 @@ input.disabled + .form-icon {
 }
 
 .label.label-primary {
-  background: #5755d9;
+  background: #52824d;
   color: #fff;
 }
 
 .label.label-secondary {
   background: #f1f1fc;
-  color: #5755d9;
+  color: #52824d;
 }
 
 .label.label-success {
@@ -2100,7 +2100,7 @@ summary.accordion-header::-webkit-details-marker {
 }
 
 .avatar {
-  background: #5755d9;
+  background: #52824d;
   border-radius: 50%;
   color: rgba(255, 255, 255, .85);
   display: inline-block;
@@ -2196,7 +2196,7 @@ summary.accordion-header::-webkit-details-marker {
 
 .badge[data-badge]::after,
 .badge:not([data-badge])::after {
-  background: #5755d9;
+  background: #52824d;
   background-clip: padding-box;
   border-radius: .5rem;
   box-shadow: 0 0 0 .1rem #fff;
@@ -2282,7 +2282,7 @@ summary.accordion-header::-webkit-details-marker {
 }
 
 .bar .bar-item {
-  background: #5755d9;
+  background: #52824d;
   color: #fff;
   display: block;
   -ms-flex-negative: 0;
@@ -2325,7 +2325,7 @@ summary.accordion-header::-webkit-details-marker {
 }
 
 .bar-slider .bar-slider-btn {
-  background: #5755d9;
+  background: #52824d;
   border: 0;
   border-radius: 50%;
   height: .6rem;
@@ -2338,7 +2338,7 @@ summary.accordion-header::-webkit-details-marker {
 }
 
 .bar-slider .bar-slider-btn:active {
-  box-shadow: 0 0 0 .1rem #5755d9;
+  box-shadow: 0 0 0 .1rem #52824d;
 }
 
 .card {
@@ -2408,7 +2408,7 @@ summary.accordion-header::-webkit-details-marker {
 }
 
 .chip.active {
-  background: #5755d9;
+  background: #52824d;
   color: #fff;
 }
 
@@ -2510,13 +2510,13 @@ summary.accordion-header::-webkit-details-marker {
 .menu .menu-item > a:focus,
 .menu .menu-item > a:hover {
   background: #f1f1fc;
-  color: #5755d9;
+  color: #52824d;
 }
 
 .menu .menu-item > a:active,
 .menu .menu-item > a.active {
   background: #f1f1fc;
-  color: #5755d9;
+  color: #52824d;
 }
 
 .menu .menu-item .form-checkbox,
@@ -2651,7 +2651,7 @@ summary.accordion-header::-webkit-details-marker {
 
 .nav .nav-item a:focus,
 .nav .nav-item a:hover {
-  color: #5755d9;
+  color: #52824d;
 }
 
 .nav .nav-item.active > a {
@@ -2661,7 +2661,7 @@ summary.accordion-header::-webkit-details-marker {
 
 .nav .nav-item.active > a:focus,
 .nav .nav-item.active > a:hover {
-  color: #5755d9;
+  color: #52824d;
 }
 
 .nav .nav {
@@ -2695,7 +2695,7 @@ summary.accordion-header::-webkit-details-marker {
 
 .pagination .page-item a:focus,
 .pagination .page-item a:hover {
-  color: #5755d9;
+  color: #52824d;
 }
 
 .pagination .page-item.disabled a {
@@ -2705,7 +2705,7 @@ summary.accordion-header::-webkit-details-marker {
 }
 
 .pagination .page-item.active a {
-  background: #5755d9;
+  background: #52824d;
   color: #fff;
 }
 
@@ -2835,7 +2835,7 @@ summary.accordion-header::-webkit-details-marker {
 }
 
 .step .step-item:not(:first-child)::before {
-  background: #5755d9;
+  background: #52824d;
   content: "";
   height: 2px;
   left: -50%;
@@ -2845,14 +2845,14 @@ summary.accordion-header::-webkit-details-marker {
 }
 
 .step .step-item a {
-  color: #5755d9;
+  color: #52824d;
   display: inline-block;
   padding: 20px 10px 0;
   text-decoration: none;
 }
 
 .step .step-item a::before {
-  background: #5755d9;
+  background: #52824d;
   border: .1rem solid #fff;
   border-radius: 50%;
   content: "";
@@ -2868,7 +2868,7 @@ summary.accordion-header::-webkit-details-marker {
 
 .step .step-item.active a::before {
   background: #fff;
-  border: .1rem solid #5755d9;
+  border: .1rem solid #52824d;
 }
 
 .step .step-item.active ~ .step-item::before {
@@ -2910,13 +2910,13 @@ summary.accordion-header::-webkit-details-marker {
 
 .tab .tab-item a:focus,
 .tab .tab-item a:hover {
-  color: #5755d9;
+  color: #52824d;
 }
 
 .tab .tab-item.active a,
 .tab .tab-item a.active {
-  border-bottom-color: #5755d9;
-  color: #5755d9;
+  border-bottom-color: #52824d;
+  color: #52824d;
 }
 
 .tab .tab-item.tab-action {
@@ -3013,7 +3013,7 @@ summary.accordion-header::-webkit-details-marker {
 
 .toast.toast-primary {
   background: rgba(87, 85, 217, .95);
-  border-color: #5755d9;
+  border-color: #52824d;
 }
 
 .toast.toast-success {
@@ -3143,7 +3143,7 @@ summary.accordion-header::-webkit-details-marker {
 }
 
 .text-primary {
-  color: #5755d9 !important;
+  color: #52824d !important;
 }
 
 a.text-primary:focus,
@@ -3247,7 +3247,7 @@ a.text-error:visited {
 }
 
 .bg-primary {
-  background: #5755d9 !important;
+  background: #52824d !important;
   color: #fff;
 }
 
@@ -3419,7 +3419,7 @@ a.text-error:visited {
 .loading::after {
   animation: loading 500ms infinite linear;
   background: transparent;
-  border: .1rem solid #5755d9;
+  border: .1rem solid #52824d;
   border-radius: 50%;
   border-right-color: transparent;
   border-top-color: transparent;
