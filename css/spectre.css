@@ -526,11 +526,11 @@ html:lang(ko),
 
 .table tbody tr.active,
 .table.table-striped tbody tr.active {
-  background: #eef0f3;
+  background: #a2a6a3;
 }
 
 .table.table-hover tbody tr:hover {
-  background: #eef0f3;
+  background: #a2a6a3;
 }
 
 .table.table-scroll {
@@ -1074,7 +1074,7 @@ textarea.form-input.input-sm {
 
 .form-checkbox input:active + .form-icon,
 .form-radio input:active + .form-icon {
-  background: #eef0f3;
+  background: #a2a6a3;
 }
 
 .form-checkbox .form-icon {
@@ -1336,7 +1336,7 @@ textarea.form-input.input-sm {
 .form-input.disabled,
 .form-select:disabled,
 .form-select.disabled {
-  background-color: #eef0f3;
+  background-color: #a2a6a3;
   cursor: not-allowed;
   opacity: .5;
 }
@@ -1347,7 +1347,7 @@ textarea.form-input.input-sm {
 
 input:disabled + .form-icon,
 input.disabled + .form-icon {
-  background: #eef0f3;
+  background: #a2a6a3;
   cursor: not-allowed;
   opacity: .5;
 }
@@ -1373,12 +1373,14 @@ input.disabled + .form-icon {
 }
 
 .label {
-  background: #eef0f3;
+  background: #a2a6a3;
   border-radius: .1rem;
-  color: #455060;
+  color: #353836;
   display: inline-block; 
   line-height: 1.25;
   padding: .1rem .2rem;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
 }
 
 .label.label-rounded {
@@ -1388,13 +1390,13 @@ input.disabled + .form-icon {
 }
 
 .label.label-primary {
-  background: #52824d;
-  color: #fff;
+  background: #a2a6a3;
+  color: #353836;
 }
 
 .label.label-secondary {
   background: #f1f1fc;
-  color: #52824d;
+  color: #353836;
 }
 
 .label.label-success {
@@ -2267,7 +2269,7 @@ summary.accordion-header::-webkit-details-marker {
 }
 
 .bar {
-  background: #eef0f3;
+  background: #a2a6a3;
   border-radius: .1rem;
   display: -ms-flexbox;
   display: flex;
@@ -2320,7 +2322,7 @@ summary.accordion-header::-webkit-details-marker {
 }
 
 .bar-slider .bar-item:not(:last-child):first-child {
-  background: #eef0f3;
+  background: #a2a6a3;
   z-index: 1;
 }
 
@@ -2389,7 +2391,7 @@ summary.accordion-header::-webkit-details-marker {
 
 .chip {
   align-items: center;
-  background: #eef0f3;
+  background: #a2a6a3;
   border-radius: 5rem;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -3204,7 +3206,7 @@ a.text-dark:hover {
 }
 
 a.text-dark:visited {
-  color: #455060;
+  color: #353836;
 }
 
 .text-success {
