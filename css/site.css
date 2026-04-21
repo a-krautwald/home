@@ -1,3 +1,11 @@
+:root {
+  --container-width: 100dvw;
+}
+
+:where(.s-container) {
+  padding-inline: 1rem;
+}
+
 .grid-span-16 {
   --span: 16;
 }
@@ -11,31 +19,79 @@
 }
 
 .photo-grid {
-  gap: 1.25rem;
-  margin-block: 1rem 2rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-block: 1rem;
 }
 
 .photo-grid figure {
+  display: block;
+  grid-column: 1 / -1;
   margin: 0;
+  padding: 1rem;
+}
+
+.photo-trigger {
+  all: unset;
+  display: block;
+  width: 100%;
+  cursor: zoom-in;
+}
+
+.photo-trigger:focus,
+.photo-trigger:focus-visible,
+.photo-trigger:active {
+  outline: none;
+  border: 0;
+  box-shadow: none;
 }
 
 .photo-grid img {
   display: block;
   width: 100%;
   height: auto;
-  border-radius: 0.5rem;
+  border: 0;
+  outline: none;
+  border-radius: 0.125rem;
+  box-shadow: none;
+  cursor: inherit;
+}
+
+.photo-grid img:focus,
+.photo-grid img:focus-visible,
+.photo-grid img:active {
+  outline: none;
+  border: 0;
+  box-shadow: none;
 }
 
 .photo-grid figcaption {
+  display: block;
+  width: 100%;
   margin-top: 0.5rem;
   font-size: 0.75rem;
   line-height: 1.3;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
 }
 
 .photo-grid figcaption a {
   text-decoration-thickness: 0.08em;
   text-underline-offset: 0.12em;
+}
+
+.photo-grid-portraits {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.photo-grid-portraits figure {
+  grid-column: auto;
+}
+
+@media (max-width: 800px) {
+  .photo-grid-portraits {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Override Sugar's default sticky site header behavior. */
@@ -47,4 +103,34 @@
 
 :where(body > header + *) {
   padding-top: 0;
+}
+
+#lightbox {
+  border: 0;
+  background: transparent;
+  padding: 0;
+  max-width: min(98dvw, 1600px);
+  box-shadow: none;
+}
+
+#lightbox::backdrop {
+  background: rgb(0 0 0 / 82%);
+}
+
+.lightbox-content {
+  margin: 0;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  padding: 0;
+}
+
+#lightbox-image {
+  display: block;
+  max-width: 100%;
+  max-height: 94dvh;
+  width: auto;
+  height: auto;
+  margin-inline: auto;
+  border-radius: 0.125rem;
 }
