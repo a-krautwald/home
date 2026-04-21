@@ -1,2 +1,2 @@
 # home
-simple website
+Simple website to showcase various projects and explore Github Pages
