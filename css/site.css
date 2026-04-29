@@ -1,44 +1,36 @@
 :root {
   --container-width: 100dvw;
 }
-
 :where(.s-container) {
   padding-inline: 1rem;
 }
-
 .grid-span-16 {
   --span: 16;
 }
-
 .grid-span-8 {
   --span: 8;
 }
-
 .grid-span-5 {
   --span: 5;
 }
-
 .photo-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
   margin-block: 1rem;
 }
-
 .photo-grid figure {
   display: block;
   grid-column: 1 / -1;
   margin: 0;
   padding: 1rem;
 }
-
 .photo-trigger {
   all: unset;
   display: block;
   width: 100%;
   cursor: zoom-in;
 }
-
 .photo-trigger:focus,
 .photo-trigger:focus-visible,
 .photo-trigger:active {
@@ -46,7 +38,6 @@
   border: 0;
   box-shadow: none;
 }
-
 .photo-grid img {
   display: block;
   width: 100%;
@@ -57,7 +48,6 @@
   box-shadow: none;
   cursor: inherit;
 }
-
 .photo-grid img:focus,
 .photo-grid img:focus-visible,
 .photo-grid img:active {
@@ -65,77 +55,6 @@
   border: 0;
   box-shadow: none;
 }
-
-.photo-grid figcaption {
-  display: block;
-  width: 100%;
-  margin-top: 0.5rem;
-  font-size: 0.75rem;
-  line-height: 1.3;
-  margin-bottom: 0;
-}
-
-.photo-grid figcaption a {
-  text-decoration-thickness: 0.08em;
-  text-underline-offset: 0.12em;
-}
-
-.photo-grid-portraits {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.photo-grid-portraits figure {
-  grid-column: auto;
-}
-
-@media (max-width: 800px) {
-  .photo-grid-portraits {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* Override Sugar's default sticky site header behavior. */
-:where(body > header) {
-  position: static;
-  top: auto;
-  z-index: auto;
-}
-
-:where(body > header + *) {
-  padding-top: 0;
-}
-
-#lightbox {
-  border: 0;
-  background: transparent;
-  padding: 0;
-  max-width: min(98dvw, 1600px);
-  box-shadow: none;
-}
-
-#lightbox::backdrop {
-  background: rgb(0 0 0 / 82%);
-}
-
-.lightbox-content {
-  margin: 0;
-  background: transparent;
-  border: 0;
-  box-shadow: none;
-  padding: 0;
-}
-
-#lightbox-image {
-  display: block;
-  max-width: 100%;
-  max-height: 94dvh;
-  width: auto;
-  height: auto;
-  margin-inline: auto;
-  border-radius: 0.125rem;
-}
-
-
 .photo-grid figcaption {
   display: block;
   width: 100%;
@@ -146,7 +65,6 @@
   letter-spacing: 0.06em;
   color: var(--s-color-fg-65-bg);
 }
-
 .photo-grid figcaption a {
   color: inherit;
   border-bottom: none;
@@ -154,11 +72,55 @@
   opacity: 0.7;
   transition: opacity 0.2s;
 }
-
 .photo-grid figcaption a:hover {
   opacity: 1;
 }
-
 .photo-grid figcaption cite {
   font-style: normal;
+}
+.photo-grid-portraits {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.photo-grid-portraits figure {
+  grid-column: auto;
+}
+@media (max-width: 800px) {
+  .photo-grid-portraits {
+    grid-template-columns: 1fr;
+  }
+}
+/* Override Sugar's default sticky site header behavior. */
+:where(body > header) {
+  position: static;
+  top: auto;
+  z-index: auto;
+}
+:where(body > header + *) {
+  padding-top: 0;
+}
+#lightbox {
+  border: 0;
+  background: transparent;
+  padding: 0;
+  max-width: min(98dvw, 1600px);
+  box-shadow: none;
+}
+#lightbox::backdrop {
+  background: rgb(0 0 0 / 82%);
+}
+.lightbox-content {
+  margin: 0;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  padding: 0;
+}
+#lightbox-image {
+  display: block;
+  max-width: 100%;
+  max-height: 94dvh;
+  width: auto;
+  height: auto;
+  margin-inline: auto;
+  border-radius: 0.125rem;
 }
