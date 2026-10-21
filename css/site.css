@@ -89,6 +89,17 @@
     grid-template-columns: 1fr;
   }
 }
+.photo-grid-3col {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.photo-grid-3col figure {
+  grid-column: auto;
+}
+@media (max-width: 800px) {
+  .photo-grid-3col {
+    grid-template-columns: 1fr;
+  }
+}
 /* Override Sugar's default sticky site header behavior. */
 :where(body > header) {
   position: static;
